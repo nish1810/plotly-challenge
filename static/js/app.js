@@ -1,7 +1,7 @@
 
 function Plot(id) {
 
-  d3.json("../data/samples.json").then((info)=> {
+  d3.json("data/samples.json").then((info)=> {
 
     var washing_freq = info.metadata.map(d => d.wfreq)
 
