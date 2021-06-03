@@ -107,7 +107,7 @@ function Plot(id) {
 
 function getInfo(id) {
 
-  d3.json("../data/samples.json").then((data)=> {
+  d3.json("data/samples.json").then((data)=> {
   
 
     var metadata = data.metadata;
@@ -134,7 +134,7 @@ function init() {
 
   var dropdown = d3.select("#selDataset");
 
-  d3.json("../data/samples.json").then((data)=> {
+  d3.json("data/samples.json").then((data)=> {
 
     data.names.forEach(function(name){
       dropdown.append("option").text(name).property("value");
